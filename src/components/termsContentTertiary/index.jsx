@@ -27,7 +27,7 @@ const TermsContentTertiary = (props) => {
         <ul class="list-disc pl-11">
           {props.servicesBulletPoints.map((bullet, i) => (
             <li className="text-[1D2026] text-lg" key={i}>
-              {bullet.servicesPoint}
+              <div>{bullet.servicesPoint}</div>
             </li>
           ))}
         </ul>

@@ -14,9 +14,17 @@ const Reviews = () => {
   };
   return (
     <div className="space-y-24">
-      <div className="px-[9%] flex items-center justify-center space-x-2">
-        <h2 className="text-[32px] font-bold">What our users are saying?</h2>
-        <img className="w-8 h-8" src={AllImages.wavingHand} alt="waving hand"/>
+      <div className="px-[9%] text-center ">
+        <span className="text-[32px] font-bold inline-block">
+          What our users are saying?&nbsp;
+          <span className="inline-block">
+            <img
+              className="w-8 h-8"
+              src={AllImages.wavingHand}
+              alt="waving hand"
+            />
+          </span>
+        </span>
       </div>
       <div className="px-[9%] flex space-x-6 overflow-x-auto">
         {reviewsData.map((reviews, index) => (

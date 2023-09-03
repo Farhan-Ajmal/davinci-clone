@@ -2,6 +2,7 @@ import AllImages from "../../allImages";
 import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
 import Button from "../button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -33,13 +34,17 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div>
+        <motion.div
+         initial={{ scale: 0.9 }}
+         animate={{ scale: 1 }}
+         transition={{ duration: 1  }}
+        >
           <img
             className="lg:w-[470px] lg:h-[502px] lg:object-contain"
             src={AllImages.mobileMockups}
             alt="mobile mockup"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

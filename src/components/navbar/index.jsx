@@ -53,12 +53,12 @@ const Navbar = () => {
           } w-full md:block md:w-auto h-full`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:flex-row md:space-x-8">
+          <ul className="font-medium flex flex-col p-4 space-y-4 md:space-y-0 md:flex-row md:space-x-8 pt-[50px] md:pt-4">
             {navbarData.map((navbar, index) => (
               <li key={index}>
                 <Link
                   to={navbar.href}
-                  className={`block py-2 pl-3 pr-4 text-[#000000] text-base text-center ${
+                  className={`block py-2 pl-3 pr-4 text-[#000000] text-xl md:text-base text-center ${
                     location.pathname === navbar.href
                       ? "font-semibold"
                       : "font-normal"

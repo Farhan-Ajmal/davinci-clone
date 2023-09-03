@@ -401,27 +401,27 @@ export const termsOfUseData = [
             nestedHeadingPara3:
               "I/We hereby give notice that I/we withdraw from my/our contract of sale of the following goods/for the provision of the following service:",
             services:
-              "_____________________________________________ (insert a description of the goods/services that are subject to the respective withdrawal)",
+              "______________________________ (insert a description of the goods/services that are subject to the respective withdrawal)",
             servicesBulletPoints: [
               {
                 servicesPoint:
-                  "Ordered on: _____________________________________________ (insert the date)",
+                  "Ordered on: _______________ (insert the date)",
               },
               {
                 servicesPoint:
-                  "Received on: _____________________________________________ (insert the date)",
+                  "Received on: _______________ (insert the date)",
               },
               {
                 servicesPoint:
-                  "Name of consumer(s):_____________________________________________",
+                  "Name of consumer(s):_______________",
               },
               {
                 servicesPoint:
-                  "Address of consumer(s):_____________________________________________",
+                  "Address of consumer(s):_______________",
               },
               {
                 servicesPoint:
-                  "Date: _____________________________________________",
+                  "Date: _______________",
               },
             ],
             nestedHeadingPara4: "(sign if this form is notified on paper)",
