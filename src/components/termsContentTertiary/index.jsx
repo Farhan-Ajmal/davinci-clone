@@ -24,7 +24,7 @@ const TermsContentTertiary = (props) => {
         <p className="text-[1D2026] text-lg">{props.services}</p>
       )}
       {props.servicesBulletPoints && (
-        <ul class="list-disc pl-11">
+        <ul className="list-disc pl-11">
           {props.servicesBulletPoints.map((bullet, i) => (
             <li className="text-[1D2026] text-lg" key={i}>
               <div>{bullet.servicesPoint}</div>
@@ -39,7 +39,7 @@ const TermsContentTertiary = (props) => {
         <p className="text-[1D2026] text-lg">{props.nestedHeadingPara5}</p>
       )}
       {props.nestedHeadingbulletPoints && (
-        <ul class="list-disc pl-11">
+        <ul className="list-disc pl-11">
           {props.nestedHeadingbulletPoints.map((bullet, i) => (
             <li className="text-[1D2026] text-lg" key={i}>
               {bullet.nestedHeadingPoint}

@@ -17,30 +17,26 @@ const TermsContent = (props) => {
         <p className="text-[1D2026] text-lg">{props.sentence2}</p>
       )}
       {props.bulletPoints && (
-        <ul class="list-disc pl-11">
+        <ul className="list-disc pl-11 space-y-6">
           {props.bulletPoints.map((bullet, i) => (
-            <>
-              <li className="text-[1D2026] text-lg" key={i}>
-                {bullet.point}
-              </li>
+            <div key={i}>
+              <li className="text-[1D2026] text-lg">{bullet.point}</li>
               {bullet.description && (
                 <p className="text-[1D2026] text-lg">{bullet.description}</p>
               )}
 
               {bullet.nestedBulletPoints && (
-                <ul class="list-disc pl-11 pt-6">
+                <ul className="list-disc pl-11 pt-6">
                   {bullet.nestedBulletPoints.map((nestedBullet, i) => (
-                    <div className="space-y-6">
-                      <NestedBulletPoints
-                        key={i}
-                        nestedPoint={nestedBullet.nestedPoint}
-                        description={nestedBullet.description}
-                      />
-                    </div>
+                    <NestedBulletPoints
+                      key={i}
+                      nestedPoint={nestedBullet.nestedPoint}
+                      description={nestedBullet.description}
+                    />
                   ))}
                 </ul>
               )}
-            </>
+            </div>
           ))}
         </ul>
       )}

@@ -5,7 +5,7 @@ const DetailedPersonalData = () => {
         Detailed information on the processing of Personal Data
       </h2>
       <div className="text-[1D2026] text-lg">
-        <ul class="list-disc pl-11 space-y-6">
+        <ul className="list-disc pl-11 space-y-6">
           <div>
             <li>Analytics</li>
             <p>

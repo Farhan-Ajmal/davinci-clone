@@ -32,7 +32,7 @@ const TermsContentSecondary = (props) => {
         </div>
       )}
       {props.subHeadingbulletPoints && (
-        <ul class="list-disc pl-11">
+        <ul className="list-disc pl-11">
           {props.subHeadingbulletPoints.map((bullet, i) => (
             <li className="text-[1D2026] text-lg" key={i}>
               {bullet.subHeadingPoint}
