@@ -29,14 +29,14 @@ const Terms = () => {
             email={termsIntro.email}
           />
         ))}
-        {userKeyInfoData.map((userKeyInfo, index) => (
+         {userKeyInfoData.map((userKeyInfo, index) => (
           <TermsContent
             key={index}
             heading={userKeyInfo.heading}
             bulletPoints={userKeyInfo.bulletPoints}
           />
         ))}
-        {termsOfUseData.map((termsOfUse, index) => (
+       {termsOfUseData.map((termsOfUse, index) => (
           <TermsContent
             key={index}
             heading={termsOfUse.heading}

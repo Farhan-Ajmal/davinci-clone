@@ -3,7 +3,7 @@ import TermsContentSecondary from "../termsContentSecondary";
 
 const TermsContent = (props) => {
   return (
-    <div className="space-y-6" key={props.key}>
+    <div className="space-y-6">
       {props.heading && (
         <h2 className="text-[#1D2026] text-xl font-bold pt-6">
           {props.heading}

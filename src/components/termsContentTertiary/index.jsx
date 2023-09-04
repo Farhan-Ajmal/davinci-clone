@@ -1,6 +1,6 @@
 const TermsContentTertiary = (props) => {
   return (
-    <div className="space-y-6" key={props.key}>
+    <div className="space-y-6">
       {props.nestedHeadingTitle && (
         <h2 className="text-[#1D2026] text-base font-bold">
           {props.nestedHeadingTitle}
